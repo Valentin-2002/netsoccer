@@ -1,12 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
-    --brand-color: #013755;
+    --brand-color: #89C346;
+    --background-primary-color: #333333;
+    --background-secondary-color: #101010;
+    --text-primary-color: #ffffff;
 }
 
-.navbar {
-    background-color: var(--brand-color);
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    font-family: Chakra Petch;
 }
 
-.btn-primary {
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
+html {
+    background-color: var(--background-primary-color);
 }
+
+/* Navbar styles */
+
+header {
+    background-color: var(--background-secondary-color);
+}
+
+header > ul {
+    list-style: none;
+
+    padding: 2rem 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+header > ul > li {
+    display: inline;
+}
+
+header > ul > li > a{
+    text-decoration: none;
+    color: var(--text-primary-color);
+}
+
+header > ul > li#nav-title > a {
+    font-size: 32px;
+    font-weight:500;
+    color: var(--brand-color);
+}
+
+header > ul > li#nav-signup {
+    margin-left: auto;
+}
+
+header > ul > li.nav-item {
+    margin-left: 3rem;
+}
+
+/* End of navbar styles */
+
+/* General styles */ 
+
+/* End of general styles */
+
+/* Main styles */
+
+main {
+    margin: 3rem 5vw;
+}
+
+/* End of main styles */
+
+/* Footer styles */
+
+footer {
+    background-color: var(--background-secondary-color);
+    color: var(--text-primary-color);
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    padding-top: 3rem;
+}
+
+footer > div {
+    margin-left: 3rem;
+
+    width: min-content;
+}
+
+footer > div > h2 {
+    font-size: 24px;
+    font-weight:500;
+    color: var(--brand-color);
+
+    text-align: center;
+}
+
+footer > div > h4 {
+    font-weight: normal;
+    color: var(--brand-color);
+    font-size: 14px;
+
+    width: max-content;
+}
+
+footer > p {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+}
+
+/* End of footer styles */
+
